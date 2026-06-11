@@ -8,61 +8,51 @@ A API Rede Raízes do Nordeste foi desenvolvida como projeto da disciplina Proje
 
 A aplicação foi construída utilizando Node.js e Express, seguindo o padrão REST e utilizando autenticação baseada em JWT.
 
-Tecnologias Utilizadas
-Node.js
-Express
-JWT (JSON Web Token)
-Swagger
-Nodemon
-JavaScript ES Modules
-Estrutura do Projeto
+# Tecnologias Utilizadas
+* Node.js
+* Express
+* JWT (JSON Web Token)
+* Swagger
+* Nodemon
+* JavaScript ES Modules
+* Estrutura do Projeto
 
 src/
-
 controllers/
-
 authController.js
-
 pedidoController.js
-
 pagamentoController.js
-
 middleware/
-
 authMiddleware.js
-
 routes/
-
 index.js
-
 data/
-
 memoria.js
-
 utils.js
-
 swagger.js
-
 app.js
 
-Funcionalidades
-Autenticação
+# Funcionalidades
+**Autenticação**
+
 Login de usuários
 Geração de token JWT
 Controle de acesso por perfil
-Pedidos
+
+**Pedidos**
 Criação de pedidos
 Consulta de pedidos
 Filtro por canal de origem
 Atualização de status
-Pagamentos
+
+**Pagamentos**
 Simulação de pagamento mock
 Aprovação ou reprovação de pagamentos
 Auditoria
 Registro de operações executadas no sistema
 Canais de Pedido
 
-O sistema aceita os seguintes canais:
+**O sistema aceita os seguintes canais:**
 
 APP
 TOTEM
@@ -75,46 +65,58 @@ Clone o repositório:
 
 git clone https://github.com/seu-usuario/rede-raizes-do-nordeste.git
 
-Acesse a pasta:
+**Acesse a pasta:**
 
 cd rede-raizes-do-nordeste
 
-Instale as dependências:
+**Instale as dependências:**
 
 npm install
-Execução
 
-Inicie a aplicação:
+**Execução**
+
+**Inicie a aplicação:**
 
 npm run dev
 
-A API ficará disponível em:
+**A API ficará disponível em:**
 
 http://localhost:3000
-Swagger
 
-Documentação da API:
+# Swagger
+
+**Documentação da API:**
 
 http://localhost:3000/api-docs
-Principais Endpoints
-Login
+
+**Principais Endpoints**
+
+**Login**
 POST /api/auth/login
-Criar Pedido
+
+**Criar Pedido**
 POST /api/pedidos
-Listar Pedidos
+
+**Listar Pedidos**
 GET /api/pedidos
-Filtrar Pedidos por Canal
+
+**Filtrar Pedidos por Canal**
 GET /api/pedidos?canalPedido=APP
-Atualizar Status
+
+**Atualizar Status**
 PATCH /api/pedidos/:id/status
-Simular Pagamento
+
+**Simular Pagamento**
 POST /api/pagamentos/mock
-Perfis de Acesso
-ADMIN
+
+**Perfis de Acesso**
+
+**ADMIN**
 Atualizar status dos pedidos
 Consultar pedidos
 Acessar funcionalidades administrativas
-CLIENTE
+
+**CLIENTE**
 Criar pedidos
 Consultar pedidos
 Realizar pagamentos
