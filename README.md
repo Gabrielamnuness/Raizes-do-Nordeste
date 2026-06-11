@@ -2,13 +2,13 @@
 
 Rede Raízes do Nordeste - API Back-End
 
-Descrição
+## Descrição
 
 A API Rede Raízes do Nordeste foi desenvolvida como projeto da disciplina Projeto Multidisciplinar – Trilha Back-End. O sistema simula a operação de uma rede de alimentação, permitindo autenticação de usuários, criação e consulta de pedidos, simulação de pagamento e atualização de status dos pedidos.
 
 A aplicação foi construída utilizando Node.js e Express, seguindo o padrão REST e utilizando autenticação baseada em JWT.
 
-# Tecnologias Utilizadas
+## Tecnologias Utilizadas
 * Node.js
 * Express
 * JWT (JSON Web Token)
@@ -32,9 +32,9 @@ utils.js
 swagger.js
 app.js
 
-# Funcionalidades
-**Autenticação**
+## Funcionalidades
 
+**Autenticação**
 Login de usuários
 Geração de token JWT
 Controle de acesso por perfil
@@ -53,7 +53,6 @@ Registro de operações executadas no sistema
 Canais de Pedido
 
 **O sistema aceita os seguintes canais:**
-
 APP
 TOTEM
 BALCAO
