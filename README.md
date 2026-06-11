@@ -35,22 +35,23 @@ app.js
 ## Funcionalidades
 
 **Autenticação**
-Login de usuários
-Geração de token JWT
-Controle de acesso por perfil
+* Login de usuários
+* Geração de token JWT
+* Controle de acesso por perfil
 
 **Pedidos**
-Criação de pedidos
-Consulta de pedidos
-Filtro por canal de origem
-Atualização de status
+* Criação de pedidos
+* Consulta de pedidos
+* Filtro por canal de origem
+* Atualização de status
 
 **Pagamentos**
-Simulação de pagamento mock
-Aprovação ou reprovação de pagamentos
-Auditoria
-Registro de operações executadas no sistema
-Canais de Pedido
+* Simulação de pagamento mock
+* Aprovação ou reprovação de pagamentos
+* Auditoria
+* Registro de operações executadas no sistema
+  
+## Canais de Pedido
 
 **O sistema aceita os seguintes canais:**
 APP
@@ -58,9 +59,10 @@ TOTEM
 BALCAO
 PICKUP
 WEB
-Instalação
 
-Clone o repositório:
+## Instalação
+
+**Clone o repositório:**
 
 git clone https://github.com/seu-usuario/rede-raizes-do-nordeste.git
 
@@ -91,35 +93,43 @@ http://localhost:3000/api-docs
 **Principais Endpoints**
 
 **Login**
+
 POST /api/auth/login
 
 **Criar Pedido**
+
 POST /api/pedidos
 
 **Listar Pedidos**
+
 GET /api/pedidos
 
 **Filtrar Pedidos por Canal**
+
 GET /api/pedidos?canalPedido=APP
 
 **Atualizar Status**
+
 PATCH /api/pedidos/:id/status
 
 **Simular Pagamento**
+
 POST /api/pagamentos/mock
 
-**Perfis de Acesso**
+## Perfis de Acesso
 
 **ADMIN**
-Atualizar status dos pedidos
-Consultar pedidos
-Acessar funcionalidades administrativas
+
+* Atualizar status dos pedidos
+* Consultar pedidos
+* Acessar funcionalidades administrativas
 
 **CLIENTE**
-Criar pedidos
-Consultar pedidos
-Realizar pagamentos
-Segurança
+
+* Criar pedidos
+* Consultar pedidos
+* Realizar pagamentos
+* Segurança
 
 A API utiliza autenticação JWT para proteger rotas privadas e controlar permissões de acesso conforme o perfil do usuário.
 
